@@ -1,1 +1,1 @@
-# Weather-app-project
+# Joke-generator-project
