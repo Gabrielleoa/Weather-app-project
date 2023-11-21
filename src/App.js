@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+import {useState, useEffect} from 'react';
 import './App.css';
 
 function App() {
+  const[jokes, setJokes]= useState({})
+  useEffect(() => {
+    fetch('https://official-joke-api.appspot.com/jokes/random')
+    .then (response => response.json())
+    .then (data  => {setJokes(data) 
+    console.log(data)} )
+  }, [])
+
+  const displayTenJokes=(() => {
+    if(jokes.length < 10){
+      setJokes([...setJokes, jokes])
+    }
+    
+  })
+
+ /* const addJokes = (() => {
+    
+  })*/
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Chuckle Charm</h1>
+      <h2>Welcome to the World Of Fun and Comedy. Crack your ribs with laughter</h2>
+     <div>
+        <h2 key={jokes.id}>
+          <p>setup: {jokes.setup}</p>
+          <p>punchline: {jokes.punchline}</p>
+        </h2>
+      </div>
+
+
+      
+
     </div>
-  );
+    
+   
+  )
 }
 
 export default App;
