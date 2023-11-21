@@ -1,44 +1,53 @@
-import {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Displaymore from './components/DisplayMore';
+
 
 function App() {
-  const[jokes, setJokes]= useState({})
+  const [jokes, setJokes] = useState([]);
+
   useEffect(() => {
+    fetch('https://official-joke-api.appspot.com/jokes/ten')
+      .then(response => response.json())
+      .then(data => {
+        setJokes(data);
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error fetching jokes:', error);
+      });
+  }, []);
+
+  const fetchNewRandomJokes = () => {
     fetch('https://official-joke-api.appspot.com/jokes/random')
-    .then (response => response.json())
-    .then (data  => {setJokes(data) 
-    console.log(data)} )
-  }, [])
-
-  const displayTenJokes=(() => {
-    if(jokes.length < 10){
-      setJokes([...setJokes, jokes])
-    }
-    
-  })
-
- /* const addJokes = (() => {
-    
-  })*/
+      .then(response => response.json())
+      .then(data => {
+        setJokes(data);
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error fetching new random jokes:', error);
+      });
+  };
 
   return (
     <div>
       <h1>Chuckle Charm</h1>
-      <h2>Welcome to the World Of Fun and Comedy. Crack your ribs with laughter</h2>
-     <div>
-        <h2 key={jokes.id}>
-          <p>setup: {jokes.setup}</p>
-          <p>punchline: {jokes.punchline}</p>
-        </h2>
+      <p>Welcome to the World Of Fun and Comedy. Crack your ribs with laughter</p>
+      <div>
+        {jokes.map((joke, index) => (
+          <div key={index}>
+              <p>Setup: {joke.setup}</p>
+              <p>Punchline: {joke.punchline}</p>
+            <hr></hr>
+          </div>
+        ))}
       </div>
-
-
-      
-
+      <Displaymore fetchNewRandomJokes={fetchNewRandomJokes} />
     </div>
-    
-   
-  )
+  );
 }
+
+
 
 export default App;
