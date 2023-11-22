@@ -13,7 +13,7 @@ ol {
 }
 
 li {
-  background-color: #000000;
+  background-color:hsla(173, 42%, 13%, 1);
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 8px;
@@ -38,11 +38,23 @@ hr {
   background-color: #2980
 }
 .logo{
-  background-image: '/Users/gabrielleodhiambo/Development/phase-2/joke-generator-project/public/funny emoji.gif'
+  text-align: center;
+ 
+
+}
+.logo img{
+  height: 300px;
+  width: 250px;
+  margin-top: 10px;
+
 }
 .joke{
   font-size: 30px;
   margin: 30px;
+}
+.joke p{
+  color:white;
+  font-weight: bolder;
 }
 .joke li{
   padding: 45px;

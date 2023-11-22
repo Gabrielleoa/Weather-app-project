@@ -1,5 +1,5 @@
 /*import React from "react";
-//import funny.jpeg from "./images"
+import funny from "./images/funny.jpeg";
 
 export default function Images (){
     return(
@@ -7,5 +7,4 @@ export default function Images (){
             <img src={funny} alt=""></img>
         </div>
     )
-}
-*/
+}*/

@@ -33,9 +33,11 @@ function App() {
   return (
     <div>
       <div>
-      <div className='logo'>
         
+      <div className='logo'>
+        <img src={'https://res.cloudinary.com/dzauvt0gr/image/upload/v1700642806/lynxjcdw3eqmoxir3s6j.gif'} alt="" />
       </div>
+      
       <div><h1 className='heading'>Chuckle Charm</h1></div>  
         </div>  
       <p className='heading'> Welcome to the World Of Fun and Comedy. Crack your ribs with laughter</p>
@@ -54,7 +56,6 @@ function App() {
        
       </ol>
       
-
     <Randomjoke /> 
     <center>
     <Like/>
