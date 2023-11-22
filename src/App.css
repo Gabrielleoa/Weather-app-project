@@ -80,3 +80,11 @@ hr {
   font-size: 30px;
   text-align: center;
 }
+.comment{
+  display: flex;
+  margin:5px;
+}
+.comment-text{
+  height:25px;
+  width:100px;
+}
