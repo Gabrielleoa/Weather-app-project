@@ -2,7 +2,6 @@ import { useState } from 'react';
 
     const CommentForm= ({ addComment}) => {
     const [comment, setComment] = useState('');
-    console.log("hhhhhhhhhhhhhhh")
     console.log(comment)
 
         const handleSubmit = (e)=> {

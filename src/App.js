@@ -17,13 +17,13 @@ function App() {
 
    const addComment = (comment) => {
 
-    console.log("getting comment")
+    
     console.log(comment)
     setComms(comms => [...comms, comment])
 
    }
  
-   console.log("commentssssssssssss")
+   
    console.log(comms)
 
   useEffect(() => {
