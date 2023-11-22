@@ -1,38 +1,70 @@
-.App {
+
+h1 {
+  color: #333; 
+}
+
+p {
+  color: #555;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #000000;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd; 
+}
+
+#edit {
+  padding: 15px;
+  background-color: #3498db;
+  color: #fff; 
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#edit:hover {
+  background-color: #2980
+}
+.logo{
+  background-image: '/Users/gabrielleodhiambo/Development/phase-2/joke-generator-project/public/funny emoji.gif'
+}
+.joke{
+  font-size: 30px;
+  margin: 30px;
+}
+.joke li{
+  padding: 45px;
+}
+.randomjoke {
+  text-align: center;
+  font-size: 30px;
+}
+.heading{
+  font-size: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.like {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0px;
 }
+.like button{
+  margin:10px;
+ 
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  font-size: 30px;
+  text-align: center;
 }

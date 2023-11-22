@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Randomjoke from './components/RandomJoke';
 import Footer from './components/Footer';
 import Like from './components/Like';
+import Images from './components/Images';
 
 function App() {
   const [jokes, setJokes] = useState([]);
@@ -31,13 +32,18 @@ function App() {
 
   return (
     <div>
-      <h1>Chuckle Charm</h1>
-      <p>Welcome to the World Of Fun and Comedy. Crack your ribs with laughter</p>
-      <ol>
+      <div>
+      <div className='logo'>
+        
+      </div>
+      <div><h1 className='heading'>Chuckle Charm</h1></div>  
+        </div>  
+      <p className='heading'> Welcome to the World Of Fun and Comedy. Crack your ribs with laughter</p>
+      <ol className='joke'>   
         
           {jokes.map((joke, index) => (
           <li key={index}>
-            <p>Setup: {joke.setup}</p>
+            <p >Setup: {joke.setup}</p>
             <p>Punchline: {joke.punchline}</p>
             <hr />
             <Like/>

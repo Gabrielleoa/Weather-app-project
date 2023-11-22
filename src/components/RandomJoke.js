@@ -18,7 +18,7 @@ export default function RandomJoke() {
   return (
     <div>
         <div id="edit" onClick={handleClick} style={{cursor: 'pointer', border: '1px solid black'}}>
-        <div key={joke.id}>
+        <div key={joke.id} className="randomjoke">
           <p>Setup: {joke.setup}</p>
           <p>Punchline: {joke.punchline}</p>
         </div>

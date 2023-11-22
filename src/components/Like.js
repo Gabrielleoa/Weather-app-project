@@ -4,9 +4,10 @@ export default function Like(){
     const [dislike, setDislike]=useState(0)
 
     return(
-<div>
-        <button> <i style={{fontSize:"30px"}} className="fa fa-thumbs-up"  onClick={() => setLike(like+1)} >{like}</i></button>
-        <button><i style={{fontSize:"30px"}} class="fa fa-thumbs-down" onClick={() => setDislike(dislike+1)}>{dislike}</i></button>
+<div className="like">
+      <div> <button > <i style={{fontSize:"30px",color:'blue'}} className="fa fa-thumbs-up"  onClick={() => setLike(like+1)} >{like}</i></button> </div>
+
+      <div>  <button><i style={{fontSize:"30px" ,color:'red'}}  className="fa fa-thumbs-down" onClick={() => setDislike(dislike+1)}>{dislike}</i></button></div>
 
         </div>
         
