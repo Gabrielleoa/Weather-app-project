@@ -11,10 +11,13 @@ function App() {
     <div>
       <Header/>
       <Routes>
+      <Route path='/' element={<Home/>}></Route>
         <Route path='/Home' element={<Home/>}></Route>
         <Route path="/Contacts" element={<Contacts/>}></Route>
         <Route path="/AboutUs" element={<AboutUs/>}></Route>
       </Routes>
+      <div>
+        </div>  
      
     </div>
   );
