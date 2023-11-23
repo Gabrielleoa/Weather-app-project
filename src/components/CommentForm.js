@@ -22,7 +22,7 @@ import { useState } from 'react';
     //     console.log(comment)
     // }
         return(
-            <div>
+            <div >
     <form className='Comment-form' onSubmit={handleSubmit}>
     <textarea
         className="comment-textarea"

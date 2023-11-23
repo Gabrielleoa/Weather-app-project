@@ -3,11 +3,11 @@ export default function Like(){
     const [likeCount, setLikeCount]= useState(0)
     const [dislikeCount, setDislikeCount]=useState(0)
     const [activeBtn, setActiveBtn] = useState('none');
-    const[comment, setComment] = useState("")
-    const onChangeHandler = (e) =>
-    setComment(e.target.value); {
+   
+    // const onChangeHandler = (e) =>
+    // setComment(e.target.value); {
 
-    }
+    // }
 
     const handleLikeClick = () => {
         if (activeBtn === "none"){
