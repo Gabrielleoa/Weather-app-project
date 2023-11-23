@@ -2,7 +2,12 @@ import { useState } from 'react';
 
     const CommentForm= ({ addComment}) => {
     const [comment, setComment] = useState('');
+    const [comments, setComments] = useState([]);
     console.log(comment)
+
+    const onClickHandler=() => {
+        setComments((comments) => [...comments, comment]);
+    }
 
         const handleSubmit = (e)=> {
             e.preventDefault();
@@ -25,9 +30,16 @@ import { useState } from 'react';
         value={comment}
         onChange={(e) => setComment(e.target.value)}
         ></textarea>
-        <button className="comment-button" type="submit" >Comment</button>
+        <div className='main-container'>
+            {comments.map((text) => (
+                <div className='comment-container'>{text}</div>
+            ))}
+        </div>
+        <div className='comment-container'>{comment}</div>
+        <button className="comment-button" type="submit"onClick={onClickHandler} >Comment</button>
 </form>
         </div>
+
         )
         }
     

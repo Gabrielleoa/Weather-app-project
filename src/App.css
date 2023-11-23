@@ -88,3 +88,13 @@ hr {
   height:25px;
   width:100px;
 }
+.comment-container{
+  font-size: small;
+  height: 15px;
+  width: 185px;
+  background-color: white;
+  color: black;
+  margin:5px 0;
+  word-break:break-all;
+
+}
