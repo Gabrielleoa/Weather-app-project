@@ -2,18 +2,15 @@
 h1 {
   color: #333; 
 }
-
 p {
   color: #555;
 }
-
 ol {
   list-style: none;
   padding: 0;
 }
-
 li {
-  background-color:hsla(173, 42%, 13%, 1);
+  background-color:rgba(7, 46, 49, 0.934);
   margin-bottom: 20px;
   padding: 15px;
   border-radius: 8px;
@@ -35,7 +32,7 @@ hr {
 }
 
 #edit:hover {
-  background-color: rgba(49, 7, 7, 0.934)
+  background-color: rgba(7, 46, 49, 0.934);
 }
 .logo{
   text-align: center;
