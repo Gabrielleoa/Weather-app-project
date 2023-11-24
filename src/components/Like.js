@@ -4,8 +4,12 @@ export default function Like() {
   const [likeCount, setLikeCount] = useState(0);
   const [dislikeCount, setDislikeCount] = useState(0);
   const [activeBtn, setActiveBtn] = useState('none');
+  const [sparkles, setSparkles ] = useState(false);
 
   const handleLikeClick = () => {
+    setSparkles(true);
+    setTimeout(() => setSparkles(false), 3000);
+
     if (activeBtn === "none") {
       setLikeCount(likeCount + 1);
       setActiveBtn("like");
@@ -24,6 +28,9 @@ export default function Like() {
   };
 
   const handleDislikeClick = () => {
+    setSparkles(true);
+    setTimeout(() => setSparkles(false), 3000);
+
     if (activeBtn === "none") {
       setDislikeCount(dislikeCount + 1);
       setActiveBtn("dislike");
@@ -42,19 +49,15 @@ export default function Like() {
   };
 
   return (
-    <div className="like">
-      <div>
-        <button>
-          <i style={{ fontSize: "30px", color: 'black' }} className="fa fa-thumbs-up" onClick={handleLikeClick}></i>
-          {likeCount}
-        </button>
-      </div>
-      <div>
-        <button>
-          <i style={{ fontSize: "30px", color: 'black' }} className="fa fa-thumbs-down" onClick={handleDislikeClick}></i>
-          {dislikeCount}
-        </button>
-      </div>
+    <div className="button-container">
+      <button className={`like-button thumbs-up ${activeBtn === "like" ? 'active' : ''} ${sparkles ? 'sparkles-animation' : ''}`} onClick={handleLikeClick}>
+        <i className="fa fa-thumbs-up"></i>
+        {likeCount}
+      </button>
+      <button className={`like-button thumbs-down ${activeBtn === "dislike" ? 'active' : ''} ${sparkles ? 'sparkles-animation' : ''}`} onClick={handleDislikeClick}>
+        <i className="fa fa-thumbs-down"></i>
+        {dislikeCount}
+      </button>
     </div>
   );
 }

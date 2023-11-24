@@ -73,8 +73,6 @@ hr {
 }
 .like button{
   margin:10px;
- 
-
 }
 .footer{
   font-size: 30px;
@@ -156,4 +154,34 @@ hr {
 
 .ContanctForm button:hover {
   background-color: #45a049;
+}
+.button-container {
+  display: flex;
+  gap: 10px; 
+}
+
+.like-button {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.thumbs-up {
+  color: black;
+}
+
+.thumbs-down {
+  color: black;
+}
+@keyframes sparkles {
+  0%, 100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+.sparkles-animation {
+  animation: sparkles 3s ease-in-out;
 }
