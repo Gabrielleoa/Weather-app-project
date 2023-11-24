@@ -51,7 +51,8 @@ export default function Like() {
       </div>
       <div>
         <button>
-          <i style={{ fontSize: "30px", color: 'black' }} className="fa fa-thumbs-down" onClick={handleDislikeClick}></i>{dislikeCount}
+          <i style={{ fontSize: "30px", color: 'black' }} className="fa fa-thumbs-down" onClick={handleDislikeClick}></i>
+          {dislikeCount}
         </button>
       </div>
     </div>
