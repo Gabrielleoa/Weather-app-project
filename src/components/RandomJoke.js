@@ -17,7 +17,7 @@ export default function RandomJoke() {
 
   return (
     <div className="joke">
-      <div style={{textAlign:"center"}}><h2>See More Jokes</h2></div>
+        <h5 style={{textAlign:"center"}}>See More Jokes</h5>
         <div id="edit" onClick={handleClick} style={{cursor: 'pointer', border: '1px solid black'}}>
         <div key={joke.id} className="randomjoke">
           <p>Setup: {joke.setup}</p>
