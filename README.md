@@ -1,8 +1,6 @@
 # JOKE GENERATOR APP
 We created an app that allows you to read jokes and genenrate random jokes. 
 
-## Table of Contents
-- 
 
 ## FEATURES
 -Displays ten default jokes
