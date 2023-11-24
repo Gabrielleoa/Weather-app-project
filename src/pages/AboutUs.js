@@ -10,6 +10,7 @@ function AboutUs (){
             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuIx0cHrcIgcWVfY9qGyrIAjj_fwrb55ElXA&usqp=CAU' alt='flatiron logo'></img>        
         </div> <br />
         <footer className='socials'>
+            <p>Links to our socials - </p>
             <a href='https://www.pinterest.com/search/pins/?rs=ac&len=2&q=memes%20funny&eq=memes&etslf=7709'>
                 <img src="https://i.pinimg.com/236x/7d/7e/98/7d7e988109dedd8e716d5f6ef6ab3e77.jpg" alt='pinterest logo' className='socials-links'></img></a>
             <a href='https://unsplash.com/t/nature'>
