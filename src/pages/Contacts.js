@@ -5,7 +5,7 @@ export default function Contacts (){
    
 const handleSubmit =()=>{
 
- alert('Thanks for Your Feedback')
+ alert('Thank you for Your Feedback!')
 }
     return (  
         <div className='container'>

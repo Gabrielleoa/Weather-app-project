@@ -1,0 +1,33 @@
+{
+    "authors": [{
+        "id" : 1,
+        "name": "Joseph Mangara",
+        "profession": "Software Engineer",
+        "picture": ""
+    },
+    {
+        "id" : 2,
+        "name": "Joseph Mangara",
+        "profession": "Software Engineer",
+        "picture": ""
+    },
+    {
+        "id" : 3,
+        "name": "Joseph Mangara",
+        "profession": "Software Engineer",
+        "picture": ""
+    },
+    {
+        "id" : 4,
+        "name": "Joseph Mangara",
+        "profession": "Software Engineer",
+        "picture": ""
+    },
+    {
+        "id" : 5,
+        "name": "Joseph Mangara",
+        "profession": "Software Engineer",
+        "picture": ""
+    }
+]
+}
