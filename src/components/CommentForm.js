@@ -32,7 +32,7 @@ const CommentForm = ({ addComment }) => {
         ></textarea>
         <textarea
           className='comment-textarea'
-          placeholder='enter your nickname'
+          placeholder='enter your name'
           value={nickName}
           onChange={(e) => setNickName(e.target.value)}
         ></textarea>

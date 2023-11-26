@@ -5,7 +5,7 @@ function AboutUs (){
   const [authorInfo, setAuthorInfo] = useState([]);
   
   useEffect (() => {
-    fetch("http://localhost:3000/authors")
+    fetch("https://my-json-server.typicode.com/Gabrielleoa/joke-generator-project/authors")
     .then(res => res.json())
     .then(info => {
         console.log(info)
