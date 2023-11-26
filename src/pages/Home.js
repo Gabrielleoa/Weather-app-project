@@ -4,8 +4,6 @@ import RandomJoke from '../components/RandomJoke';
 import Like from '../components/Like';
 import CommentForm from '../components/CommentForm';
 
-
-
 export default function Home(){
     const [jokes, setJokes] = useState([]);
     useEffect(() => {
@@ -13,7 +11,7 @@ export default function Home(){
         .then(response => response.json())
         .then(data => {
           setJokes(data);
-          console.log(data);
+          console.log(data)
         })
         .catch(error => {
           console.error('Error fetching jokes:', error);

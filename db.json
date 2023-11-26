@@ -1,7 +1,7 @@
 {
     "authors": [{
         "id" : 1,
-        "name": "Joseph Mangara",
+        "name": "John Mwau",
         "profession": "Software Engineer",
         "picture": ""
     },
@@ -13,19 +13,19 @@
     },
     {
         "id" : 3,
-        "name": "Joseph Mangara",
+        "name": "Gabrielle Odhiambo",
         "profession": "Software Engineer",
         "picture": ""
     },
     {
         "id" : 4,
-        "name": "Joseph Mangara",
+        "name": "Samwuel Njuguna",
         "profession": "Software Engineer",
         "picture": ""
     },
     {
         "id" : 5,
-        "name": "Joseph Mangara",
+        "name": "Maxwell Njoroge",
         "profession": "Software Engineer",
         "picture": ""
     }

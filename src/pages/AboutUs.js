@@ -1,7 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 
 function AboutUs (){
+  const [authorInfo, setAuthorInfo] = useState([]);
+  
+  useEffect (() => {
+    fetch("http://localhost:3000/authors")
+    .then(res => res.json())
+    .then(info => {
+        console.log(info)
+        setAuthorInfo(info)
+    })
+    .catch(error => {
+        console.error('Error fetching jokes:', error);
+      });
+  }, []);
+
     return(
         <>
         <div className='container'>
@@ -10,6 +24,14 @@ function AboutUs (){
             Feel free to send us feedback on any bugs, more jokes to add to the app, and general comments. Thank you!</p>
             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuIx0cHrcIgcWVfY9qGyrIAjj_fwrb55ElXA&usqp=CAU' alt='flatiron logo'></img>        
         </div> <br />
+        <ul> 
+            {authorInfo.map((authors) => (
+                <li key={authors.id} className='author-info'>
+                    <p>Name - {authors.name}</p>
+                    <p>Profession - {authors.profession}</p>
+                </li>
+            ))}
+        </ul>
         <footer className='socials'>
             <p>Links to our socials - </p>
             <a href='https://www.pinterest.com/search/pins/?rs=ac&len=2&q=memes%20funny&eq=memes&etslf=7709'>
