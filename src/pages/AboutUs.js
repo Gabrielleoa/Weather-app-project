@@ -24,11 +24,13 @@ function AboutUs (){
             Feel free to send us feedback on any bugs, more jokes to add to the app, and general comments. Thank you!</p>
             <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuIx0cHrcIgcWVfY9qGyrIAjj_fwrb55ElXA&usqp=CAU' alt='flatiron logo'></img>        
         </div> <br />
+        <h5 className='container'>Personal Information</h5>
         <ul> 
             {authorInfo.map((authors) => (
                 <li key={authors.id} className='author-info'>
                     <p>Name - {authors.name}</p>
                     <p>Profession - {authors.profession}</p>
+                    <br />
                 </li>
             ))}
         </ul>

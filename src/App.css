@@ -9,7 +9,7 @@ ol {
   list-style: none;
   padding: 0;
 }
-li {
+#joke-display {
   background-color:rgba(7, 46, 49, 0.934);
   margin-bottom: 20px;
   padding: 15px;
@@ -110,6 +110,7 @@ hr {
 }
 #navbar {
   margin-left: 20px;
+
 }
 #homepage {
   margin-left: 20px;
@@ -178,7 +179,6 @@ hr {
   animation: sparkles 3s ease-in-out;
 }
 .socials {
-  position: fixed;
   bottom: 0;
   background-color: #e4eff3;
   height: 100px;
@@ -194,4 +194,5 @@ hr {
 }
 .author-info {
   list-style: none;
+  
 }
