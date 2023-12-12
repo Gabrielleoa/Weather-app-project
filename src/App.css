@@ -103,6 +103,7 @@ hr {
   width: 70%;
   font-family: serif;
   font-size: large;
+  
 }
 .container img{
   width: 500px;
@@ -195,4 +196,7 @@ hr {
 .author-info {
   list-style: none;
   
+}
+body {
+  background-color: aquamarine;
 }

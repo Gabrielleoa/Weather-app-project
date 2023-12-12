@@ -1,9 +1,20 @@
 export default function Footer(){
 
     return (
+        <>
         <div className="footer">
-            <p>Hope you had fun 😁 </p>
+            <p>Enjoy the jokes :) </p>
             <p>© Jokes</p>
         </div>
+        <footer className='socials'>
+        <p>Links to our socials - </p>
+        <a href='https://www.pinterest.com/search/pins/?rs=ac&len=2&q=memes%20funny&eq=memes&etslf=7709'>
+            <img src="https://i.pinimg.com/236x/7d/7e/98/7d7e988109dedd8e716d5f6ef6ab3e77.jpg" alt='pinterest logo' className='socials-links'></img></a>
+        <a href='https://unsplash.com/t/nature'>
+            <img src="https://avatars.githubusercontent.com/u/9951955?s=200&v=4" alt='unsplash logo' className='socials-links'></img></a>
+        <a href='https://play.google.com/store/apps/details?id=bookofjokes.app&hl=en&gl=US&pli=1'>
+            <img src='https://freelogopng.com/images/all_img/1664285914google-play-logo-png.png' alt='google play logo' className='socials-links'></img></a>
+    </footer>
+    </>
     )
 }

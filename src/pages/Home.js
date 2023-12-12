@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Footer from '../components/Footer';
 import RandomJoke from '../components/RandomJoke';
 import Like from '../components/Like';
 import CommentForm from '../components/CommentForm';
@@ -20,8 +19,8 @@ export default function Home(){
   
     return (
         <div>
-            <h2 id="homepage">Home Page</h2>
-            
+            {/* <h2 id="homepage">Home Page</h2>
+             */}
             <p className='heading'> Welcome to the World Of Fun and Comedy. Crack your ribs with laughter</p>
             <ol className='joke'>   
             
@@ -36,7 +35,6 @@ export default function Home(){
         </ol>
         <RandomJoke />
         <CommentForm />
-        <Footer />
         </div>
         )    
     }
